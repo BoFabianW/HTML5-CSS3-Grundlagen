@@ -14,7 +14,7 @@
 <body>
 
     <!-- Wird unter Anderem für Navigation und Darstellung des Logos verwendet -->
-    <header>
+    <header style="background-color: yellow; padding: 20px;">
         <!-- Zeichnet z.B. einen Seitenbereich aus, der die Navigation enthält -->
         <nav>
             <!-- Link -->
@@ -45,7 +45,7 @@
     <a href="index.html">Ich bin ein Link</a>
     <br> 
     <a href="https://google.de" target="_blank">Hier komme ich zu Google</a> <!-- Attribut target="_blank" öffnet den Link in einem neuen Tab -->
-
+    <!-- Das a-Tag ist standardmäßig ein inline-Element - Darstellung der Elemente nebeneinander -->
     <br><hr>
 
     <!-- Liste -->
@@ -107,13 +107,50 @@
     <br><hr><br>
 
     <!-- Image - img -->
-    <img style="width: 500px;" src="images/01.jpg" alt="Bildbeschreibung">
-    <!-- Das img-Tag benötigt keinen schließende Tag, da es keinen Inhalt hat -->
+    <img style="width: 500px; border-radius: 10px;" src="images/01.jpg" alt="Bildbeschreibung">
+    <!-- Das img-Tag benötigt keinen schließenden Tag, da es keinen Inhalt hat -->
+
+    <br><hr><br>
 
     <!-- Div-Container -->
-    <div>
-        <p>Ich bin ein  Paragraph und befinde mich in einem Div-Container</p>
+    <div style="border: black solid 3px; padding: 20px">
+        <p>Ich bin ein Paragraph und befinde mich in einem Div-Container</p>
+        <a href="#">Ich bin ein Link</a>
     </div>
     
+    <br><hr><br>
+
+    <!-- Eingabeelemente und Label -->
+    <label for="vorname">Vorname:</label>
+    <input type="text" name="vorname">
+    <label for="nachname">Nachname</label>
+    <input type="text" name="nachname" placeholder="Nachname">
+    <label for="nachricht">Nachricht</label>
+    <textarea name="nachricht" cols="30" rows="10"></textarea>
+
+    <br><br><hr><br>
+
+    <!-- Formular -->
+    <form action="senden.php" method="get">
+
+        <label for="vorname">Vorname:</label>
+        <input style="display: block;" type="text" name="vorname" required> <!-- required macht aus dem Eingabefeld ein Pflichtfeld -->
+        <label for="nachname">Nachname</label>
+        <input style="display: block;" type="text" name="nachname" placeholder="Nachname" required>
+        <label for="nachricht">Nachricht</label>
+        <textarea style="display: block; resize: none;" name="nachricht" cols="30" rows="10"></textarea>
+        <!-- resize: none verhindert die manuelle Größenveränderung -->
+
+        <button type="submit">Absenden</button>
+        <button type="reset">Löschen</button>
+
+    </form>
+
+    <br><hr><br>
+
+    <footer style="background-color: black; text-align: center; padding: 20px;">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+    </footer>
 </body>
 </html>
