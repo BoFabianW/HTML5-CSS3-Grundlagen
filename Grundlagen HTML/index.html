@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Sprache der Website -->
+<head>
+
+    <!-- Allgmeine Infos über die Website -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grundlagen HTML</title> <!-- Titel der Website -->
+</head>
+
+<!-- Body enthält den sichtbaren Inhalt der Website -->
+<body>
+
+    <!-- Wird unter Anderem für Navigation und Darstellung des Logos verwendet -->
+    <header>
+        <!-- Zeichnet z.B. einen Seitenbereich aus, der die Navigation enthält -->
+        <nav>
+            <!-- Link -->
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Kontakt</a>
+        </nav> 
+    </header>
+
+    <br><hr>
+
+    <!-- Paragraph -->
+    <p>Ich bin ein Paragraph - Ich werde z.B. für Textabschnitte verwendet</p>
+
+    <hr><br> <!-- br = Zeilenumbruch einfügen, hr = Trennlinie einfügen -->
+
+    <!-- Überschriften -->
+    <h1 style="color: red;">Überschrift H1</h1> <!-- Attribut 'style' legt Eigenschaften fest-->
+    <h2>Überschrift H2</h2> 
+    <h3>Überschrift H3</h3> 
+    <h4>Überschrift H4</h4> 
+    <h5>Überschrift H5</h5> 
+    <h6>Überschrift H6</h6> 
+
+    <br><hr><br>
+
+    <!-- Link -->
+    <a href="index.html">Ich bin ein Link</a>
+    <br> 
+    <a href="https://google.de" target="_blank">Hier komme ich zu Google</a> <!-- Attribut target="_blank" öffnet den Link in einem neuen Tab -->
+
+    <br><hr>
+
+    <!-- Liste -->
+    <ul style="font-size: 25px; color: blue;"> <!-- Unsortierte Liste -->
+        <li>Apfel</li>
+        <li>Birne</li>
+        <li>Kirsche</li>
+        <li>Banane</li>
+    </ul>
+
+    <ol> <!-- Sortierte Liste -->
+        <li>Apfel</li>
+        <li>Birne</li>
+        <li>Kirsche</li>
+        <li>Banane</li>
+    </ol>
+
+    <br><hr><br>
+
+    <!-- Tabelle -->
+    <table style="border: black solid 2px;">
+        <!-- Tabellenkopf -->
+        <thead>
+            <!-- Neue Tabellenzeile -->
+            <tr>
+                <!-- Kopfspalte --> 
+                <th style="border: black solid 2px;">Hund</th> 
+                <th>Katze</th>
+                <th>Maus</th>
+            </tr>
+        </thead>
+
+        <!-- Tabellenfuß -->
+        <tfoot>
+            <tr>
+                <td>
+                     <p>Ende der Tabelle</p>
+                </td>
+            </tr>
+        </tfoot>
+        
+        <!-- Tabelleninhalt -->
+        <tbody>
+            <tr>
+                <td>Bello</td>
+                <td>Silvester</td>
+                <td>Speedy</td>
+            </tr>
+            <tr>
+                <td>Beethoven</td>
+                <td>Garfield</td>
+                <td>Feivel</td>
+            </tr>
+        </tbody>
+
+        <!-- thead, tfoot, tbody platzieren sich automatisch in der Tabelle -->  
+    </table>
+
+    <br><hr><br>
+
+    <!-- Image - img -->
+    <img style="width: 500px;" src="images/01.jpg" alt="Bildbeschreibung">
+    <!-- Das img-Tag benötigt keinen schließende Tag, da es keinen Inhalt hat -->
+
+    <!-- Div-Container -->
+    <div>
+        <p>Ich bin ein  Paragraph und befinde mich in einem Div-Container</p>
+    </div>
+    
+</body>
+</html>
